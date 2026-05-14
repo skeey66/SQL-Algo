@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\skeey\\\\SQL-Algo\" status)",
+      "Bash(git clone *)",
+      "Bash(git -C \"C:\\\\Users\\\\skeey\\\\SQL-Algo\" init -b main)",
+      "Bash(git -C \"C:\\\\Users\\\\skeey\\\\SQL-Algo\" remote add origin https://github.com/skeey66/SQL-Algo.git)",
+      "Bash(git -C \"C:\\\\Users\\\\skeey\\\\SQL-Algo\" remote -v)",
+      "Bash(git -C \"C:\\\\Users\\\\skeey\\\\SQL-Algo\" add README.md)",
+      "Bash(git -C 'C:\\\\Users\\\\skeey\\\\SQL-Algo' commit -m ' *)",
+      "Bash(git *)"
+    ]
+  }
+}
