@@ -1,0 +1,17 @@
+SELECT
+    a.REST_ID, a.REST_NAME, a.FOOD_TYPE, a.FAVORITES, a.ADDRESS, ROUND(AVG(b.REVIEW_SCORE),2) AS SCORE
+FROM
+    REST_INFO AS a
+INNER JOIN
+    REST_REVIEW AS b
+ON 
+    a.REST_ID=b.REST_ID
+WHERE
+    a.ADDRESS LIKE "서울%"
+GROUP BY 
+    a.REST_ID, a.REST_NAME, a.FOOD_TYPE, a.FAVORITES, a.ADDRESS
+ORDER BY
+    SCORE DESC, a.FAVORITES DESC
+
+## 데이터 중에 서울시로 시작하는 데이터가 있기 떄문에 서울특별시% 이렇게 하면 안됨
+## GROUP BY 써야 함 AVG() 함수 써야하니까
